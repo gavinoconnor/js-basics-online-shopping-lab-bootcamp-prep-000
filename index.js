@@ -60,6 +60,7 @@ function removeFromCart(item) {
 
       return cart
     }
+    console.log('That item is not in your cart.')
   }
 }
 
