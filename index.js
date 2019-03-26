@@ -58,7 +58,7 @@ function removeFromCart(item) {
     if (value === item) {
       cart.splice(i, 1)
 
-      return updatedCart
+      return cart
     }
   }
 }
