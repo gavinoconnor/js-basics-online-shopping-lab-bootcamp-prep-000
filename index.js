@@ -52,9 +52,11 @@ function total() {
 }
 
 function removeFromCart(item) {
+  let itemInCart = false
   for (var i = 0; i < cart.length; i++) {
 
     if (cart[i].itemName === item) {
+      itemInCart = true
       cart.splice(i, 1)
 
       return cart
