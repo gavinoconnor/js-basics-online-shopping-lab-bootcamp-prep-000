@@ -52,16 +52,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+  let itemInCart = false
   for (var i = 0; i < cart.length; i++) {
-    var value = Object.values(cart[i])[0]
 
-    if (value === item) {
+    if (cart.itemName === item) {
+      itemInCart = true
       cart.splice(i, 1)
 
       return cart
     }
-    else {
-      console.log('That item is not in your cart.')
+
     }
   }
 }
