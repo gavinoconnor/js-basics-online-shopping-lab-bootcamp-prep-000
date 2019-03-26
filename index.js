@@ -60,7 +60,7 @@ function removeFromCart(item) {
 
       return cart
     }
-    if (value !== item) {
+    else (value !== item) {
       console.log('That item is not in your cart.')
     }
   }
