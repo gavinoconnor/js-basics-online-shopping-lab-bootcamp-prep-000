@@ -52,16 +52,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-  let itemInCart = false
   for (var i = 0; i < cart.length; i++) {
 
     if (cart[i].itemName === item) {
-      itemInCart = true
       cart.splice(i, 1)
 
       return cart
     }
-    if (itemInCart = undefined) {
+    if (cart[i].itemName !== item) {
       console.log('That item is not in your cart.')
     }
     }
