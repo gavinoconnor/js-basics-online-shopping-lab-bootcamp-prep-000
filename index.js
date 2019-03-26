@@ -61,7 +61,7 @@ function removeFromCart(item) {
 
       return cart
     }
-    if (itemInCart === undefined) {
+    if (itemInCart = undefined) {
       console.log('That item is not in your cart.')
     }
     }
